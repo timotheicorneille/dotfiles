@@ -46,7 +46,13 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true; # Pour compat X, même avec Hyprland il faut
   services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = false;
+  services.xserver.desktopManager.gnome.enable = true;
+#   services.xserver.displayManager.gdm.sessions = [
+#       {
+#         name = "Hyprland";
+#         command = "Hyprland";
+#       }
+#     ];
 
   # Configure keymap in X11
   services.xserver.xkb = {
