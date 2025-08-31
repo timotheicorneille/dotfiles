@@ -97,7 +97,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-    wget curl git vim
+    wget curl git vim discord spotify gh tldr
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
