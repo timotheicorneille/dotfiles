@@ -23,5 +23,17 @@
 	  }
 	];
       };
+     nixosConfigurations.pro-laptop-vm = nixpkgs.lib.nixosSystem {
+       inherit system;
+       modules = [
+         ./hosts/pro-laptop-vm/configuration.nix
+	 home-manager.nixosModules.home-manager
+	 {
+	   home-manager.useGlobalPkgs = true;
+	   home-manager.useUserPackages = true;
+	   home-manager.users.tim = import ./home/tim/default.nix;
+	 }
+      ];
+    };
     };
 }
