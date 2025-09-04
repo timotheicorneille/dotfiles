@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, hyprland, ... }:
 
 {
   imports = [
@@ -7,6 +7,8 @@
     ./apps/nvim.nix
     ./apps/neomutt.nix
     ./apps/common.nix
+    ./apps/alacritty.nix
+    ./apps/waybar.nix
     ./services.nix
   ];
 

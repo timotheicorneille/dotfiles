@@ -30,13 +30,14 @@
     LC_TIME = "fr_FR.UTF-8";
   };
 
-  services.xserver.enable = true;
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
 
-  services.xserver.xkb = {
-    layout = "fr";
-    variant = "";
+  services.displayManager.sddm = {
+    enable = true;
+    wayland.enable = true;
   };
 
   console.keyMap = "fr";
@@ -60,10 +61,12 @@
     shell = pkgs.zsh;
   };
 
+  programs.zsh.enable = true;
+
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
-    wget curl git vim
+    wget curl git vim wayland xwayland
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
