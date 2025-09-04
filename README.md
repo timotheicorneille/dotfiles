@@ -7,8 +7,6 @@
   * How does it work ?
   * What is the goal ?
 
-* Use hyprland fully (no Gnome)
-
 * Add a few apps like
   * newsboat (rss reader)
   * lazygit
@@ -18,6 +16,7 @@
 * Continue refactoring
 
 * Setup zsh properly with
-  * oh-my-zsh
+  * a better oh-my-zsh config
+  * a different theme than `robbyrussell`
 
-* Ajouter gh comme credential manager de git
+* Fix this error : `/run/current-system/sw/bin/gh auth git-credential get: line 1: /run/current-system/sw/binugh: No such file or directory`
