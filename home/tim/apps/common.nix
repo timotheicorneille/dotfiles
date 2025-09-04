@@ -2,14 +2,10 @@
 
 {
   home.packages = with pkgs; [
-    git
     htop
     fzf
-    alacritty
-    firefox
+    tldr
+    gh
   ];
 
-  programs.zsh = {
-    enable = true;
-  };
 }
