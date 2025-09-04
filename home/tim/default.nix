@@ -3,6 +3,7 @@
 {
   imports = [
     ./wm/hyprland.nix
+    ./shell/zsh.nix
     ./apps/nvim.nix
     ./apps/neomutt.nix
     ./apps/common.nix
