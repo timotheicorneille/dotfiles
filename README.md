@@ -19,3 +19,5 @@
 
 * Setup zsh properly with
   * oh-my-zsh
+
+* Ajouter gh comme credential manager de git
